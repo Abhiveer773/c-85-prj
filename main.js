@@ -108,12 +108,11 @@ function left()
 	//Define function to move the car left side
     if(Player_X > 0)
     {
-        Player_X = Player_X - block_img_width;
-        console.log("block IMG width = " + block_img_width);
+        Player_X = Player_X - 10
         console.log("When left key is pressed, X = " + player_X + "Y = " + Player_Y);
 
-        canvas.remove(playerobject);
-        player_update();
+        canvas.remove(greencar_image);
+        grrencar_update();
     }
 }
 
@@ -124,12 +123,11 @@ function right()
 {
     if(Player_X <= 951)
     {
-        Player_X = Player_X - block_img_width;
-        console.log("block IMG width = " + block_img_width);
+        Player_X = Player_X - 10
         console.log("When right key is pressed, X = " + player_X + "Y = " + Player_Y);
 
-        canvas.remove(playerobject);
-        player_update();
+        canvas.remove(greencar_image);
+        grrencar_update();
     }
 }  
 
